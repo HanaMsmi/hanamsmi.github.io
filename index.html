@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Portfolio of Hanieh Masoomi, Computer Science for Digital Media master's student focused on machine learning, NLP, computer vision, LLM systems, and backend APIs." />
+    <title>Hanieh Masoomi | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <a class="logo" href="#top" aria-label="Hanieh Masoomi home">Hanieh Masoomi</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero section-shell">
+            <div class="hero-content">
+                <p class="eyebrow">Machine Learning · LLM Systems · Backend APIs</p>
+                <h1>Hi, I’m Hanieh Masoomi</h1>
+                <p class="hero-subtitle">
+                    Computer Science for Digital Media master’s student based in Weimar, Germany, with experience in
+                    machine learning, NLP, computer vision, LLM systems, and backend APIs.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="button">View Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section section-narrow about-style-3">
+            <div class="section-heading">
+                <h2>About</h2>
+            </div>
+
+            <div class="text-card about-editorial-card">
+                <p class="about-editorial-text">
+                    I am a Master's student in Computer Science for Digital Media at Bauhaus-Universität Weimar. My
+                    experience spans Natural Language Processing (NLP), recommender systems, and Large Language Model
+                    (LLMs) applications. I enjoy building end-to-end intelligent systems, from data collection and
+                    feature engineering to
+                    model development.
+                    I am currently looking for a part-time opportunity where I can contribute, learn, and grow in an
+                    international environment.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="section-heading centered">
+                <h2>Featured Projects</h2>
+            </div>
+
+            <div class="project-grid featured-layout">
+                <article class="project-card project-card-featured">
+                    <div class="project-content">
+                        <h3>Product Attribute Extraction with LLMs and VLMs</h3>
+                        <p>AI pipeline for validating product attributes from images using
+                            LLMs, VLMs, rule-based checks, FastAPI, and Django.</p>
+                        <ul class="project-highlights">
+                            <li>Combines visual understanding with rule-based validation.
+                            </li>
+                            <li>Designed to reduce manual product review workload.</li>
+                        </ul>
+                        <span class="inline-metric">~90% accuracy</span>
+                    </div>
+                    <div class="project-media-pair large-media">
+                        <figure class="project-figure">
+                            <img class="project-media" src="assets/images/vqa/ottoman.jpg"
+                                alt="VQA attribute extraction input image" loading="lazy">
+                            <figcaption>Input</figcaption>
+                        </figure>
+                        <figure class="project-figure">
+                            <img class="project-media full-image" src="assets/images/vqa/vqa-output.png"
+                                alt="VQA attribute extraction output image" loading="lazy">
+                            <figcaption>Output</figcaption>
+                        </figure>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-featured reverse">
+                    <div class="project-content">
+                        <h3>Dimensional Image Generation</h3>
+                        <p>Vision-language model pipeline for detecting product
+                            measurements and drawing dimensional arrows on product images.</p>
+                        <ul class="project-highlights">
+                            <li>Turns raw product photos into annotated measurement
+                                visuals.</li>
+                            <li>Built for practical e-commerce image enrichment.</li>
+                        </ul>
+                        <span class="inline-metric">~90% accuracy</span>
+                    </div>
+                    <div class="project-media-pair large-media">
+                        <figure class="project-figure">
+                            <img class="project-media" src="assets/images/dimensional/pantry-cabinet.jpg"
+                                alt="Dimensional generation before image" loading="lazy">
+                            <figcaption>Before</figcaption>
+                        </figure>
+                        <figure class="project-figure">
+                            <img class="project-media" src="assets/images/dimensional/dimensional.jpg"
+                                alt="Dimensional generation after image" loading="lazy">
+                            <figcaption>After</figcaption>
+                        </figure>
+                    </div>
+                </article>
+
+                <article class="project-card compact-card">
+                    <div class="project-content">
+                        <h3>Depression Detection from Reddit Texts</h3>
+                        <p>NLP and machine learning project for detecting signs of
+                            depression from Reddit user posts, using feature engineering and multiple classifiers.</p>
+                        <span class="inline-metric">87.8% accuracy</span>
+                    </div>
+                    <div class="workflow-frame">
+                        <img class="project-media" src="assets/images/depression-detection/workflow.png"
+                            alt="Depression detection workflow diagram" loading="lazy">
+                    </div>
+                </article>
+
+                <article class="project-card compact-card">
+                    <div class="project-content">
+                        <h3>PCA-Based Facial Gesture Analysis</h3>
+                        <p>Linear algebra project using PCA to analyze facial gestures and
+                            transfer expressions between people.</p>
+                    </div>
+                    <div class="media-stack">
+                        <img class="project-media stack-main" src="assets/images/linear-algebra/plots.png"
+                            alt="PCA facial gesture analysis plots" loading="lazy">
+                        <div class="video-grid">
+                            <video class="project-media" controls preload="metadata">
+                                <source src="assets/videos/points.mp4" type="video/mp4">
+                            </video>
+                            <video class="project-media" controls preload="metadata">
+                                <source src="assets/videos/transferred.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <a class="project-link" href="https://github.com/HanaMsmi/Gesture_Transfer_With_Appearance"
+                        target="_blank" rel="noreferrer">GitHub</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="section section-narrow">
+            <div class="section-heading">
+                <h2>Professional Experience</h2>
+            </div>
+
+            <div class="timeline">
+                <article class="experience-item">
+                    <p class="experience-meta">Feb 2024 - Mar 2026 - Remote</p>
+                    <h3>Data Scientist - Data Co Lab</h3>
+                    <ul>
+                        <li>Built a food recommender system using collaborative
+                            filtering and content-based methods; solved cold-start problem using popularity-based
+                            techniques.</li>
+                        <li>Developed an AI-based product validation system using
+                            multiple LLMs to verify product attributes from images (~90% accuracy), reducing manual
+                            workload significantly.</li>
+                        <li>Designed a vision-language pipeline for extracting product
+                            dimensions and generating annotated images (~90% accuracy).</li>
+                        <li>Built and deployed APIs using FastAPI and integrated
+                            backend services using Django.</li>
+                        <li>Developed an AI voice assistant for restaurant order
+                            handling using STT to LLM to TTS pipeline; reduced operational costs by 20% through caching
+                            strategies.</li>
+                        <li>Worked on LLM-based chatbot systems using prompt
+                            engineering, RAG, fine-tuning, and memory handling.</li>
+                    </ul>
+                </article>
+
+                <article class="experience-item">
+                    <p class="experience-meta">Jul 2022 - Sep 2022</p>
+                    <h3>Data Science Intern - Iran Telecommunication Research Center (ITRC)</h3>
+                    <ul>
+                        <li>Reproduced a research paper on coupon recommendation
+                            systems for e-commerce.</li>
+                        <li>Used Kaggle dataset with 417K+ user sessions.</li>
+                        <li>Implemented XGBoost and CatBoost models using Keras.</li>
+                        <li>Applied techniques such as k-fold cross-validation, early
+                            stopping, and class weighting.</li>
+                        <li>Improved model performance through hyperparameter tuning.
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-heading centered">
+                <h2>Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <article>
+                    <h3>Machine Learning and AI</h3>
+                    <p>Machine Learning, Deep Learning, NLP, Recommender Systems, Data
+                        Analysis</p>
+                </article>
+                <article>
+                    <h3>LLMs and Generative AI</h3>
+                    <p>Prompt Engineering, RAG, Fine-tuning, AI Agents, VLMs, STT and TTS
+                        Pipelines</p>
+                </article>
+                <article>
+                    <h3>Programming and Tools</h3>
+                    <p>Python, SQL, Git, Docker, MS Office</p>
+                </article>
+                <article>
+                    <h3>Frameworks</h3>
+                    <p>PyTorch, Keras, FastAPI, Django</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="contact-card">
+                <p class="eyebrow">Let’s connect</p>
+                <h2>Contact</h2>
+                <p><span>Email</span>: <a href="mailto:hannahmasoomi@gmail.com">hannahmasoomi@gmail.com</a></p>
+                <p class="contact-links">
+                    <a href="https://www.linkedin.com/in/hanamsmi/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="https://github.com/haniehmasoomi" target="_blank" rel="noreferrer">GitHub</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
