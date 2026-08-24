@@ -6,231 +6,366 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
         content="Portfolio of Hanieh Masoomi, Computer Science for Digital Media master's student focused on machine learning, NLP, computer vision, LLM systems, and backend APIs." />
-    <title>Hanieh Masoomi | Portfolio</title>
+    <meta name="theme-color" content="#07070d" />
+    <title>Hanieh Masoomi | ML & LLM Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <header class="navbar">
-        <a class="logo" href="#top" aria-label="Hanieh Masoomi home">Hanieh Masoomi</a>
-        <nav class="nav-links" aria-label="Primary navigation">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+    <div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+
+    <div class="backdrop" aria-hidden="true">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="orb orb-c"></div>
+        <div class="grid-lines"></div>
+        <div class="noise"></div>
+    </div>
+
+    <header class="nav" id="nav">
+        <a class="brand" href="#top">
+            <span class="brand-mark">HM</span>
+            <span class="brand-text">Hanieh Masoomi</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+            <a href="#about"><span>01</span>About</a>
+            <a href="#projects"><span>02</span>Work</a>
+            <a href="#experience"><span>03</span>Experience</a>
+            <a href="#skills"><span>04</span>Skills</a>
+            <a href="#contact"><span>05</span>Contact</a>
         </nav>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span>
+        </button>
     </header>
 
     <main id="top">
-        <section class="hero section-shell">
-            <div class="hero-content">
-                <p class="eyebrow">Machine Learning · LLM Systems · Backend APIs</p>
-                <h1>Hi, I’m Hanieh Masoomi</h1>
-                <p class="hero-subtitle">
-                    Computer Science for Digital Media master’s student based in Weimar, Germany, with experience in
-                    machine learning, NLP, computer vision, LLM systems, and backend APIs.
+        <section class="hero">
+            <div class="hero-copy" data-reveal>
+                <p class="status"><i></i>Open to part-time roles · Weimar, Germany</p>
+                <h1>
+                    Building <em>intelligent</em> systems
+                    <span class="line-2">end&nbsp;to&nbsp;end.</span>
+                </h1>
+                <p class="lede">
+                    I'm <strong>Hanieh Masoomi</strong> — a Computer Science for Digital Media master's student working
+                    across NLP, recommender systems, vision-language models and production LLM pipelines.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="button">View Projects</a>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects">See the work<i class="arrow">→</i></a>
+                    <a class="btn btn-ghost" href="mailto:hannahmasoomi@gmail.com">Get in touch</a>
                 </div>
+                <ul class="chip-row">
+                    <li>NLP</li>
+                    <li>LLM Systems</li>
+                    <li>RAG</li>
+                    <li>Computer Vision</li>
+                    <li>Recommenders</li>
+                    <li>FastAPI</li>
+                    <li>PyTorch</li>
+                </ul>
             </div>
+
+            <aside class="hero-stats" data-reveal>
+                <div class="stat">
+                    <b>~90<small>%</small></b>
+                    <span>Attribute extraction accuracy with LLM + VLM pipeline</span>
+                </div>
+                <div class="stat">
+                    <b>87.8<small>%</small></b>
+                    <span>Depression detection accuracy from Reddit text</span>
+                </div>
+                <div class="stat">
+                    <b>20<small>%</small></b>
+                    <span>Operational cost cut on a voice-assistant pipeline</span>
+                </div>
+                <div class="stat">
+                    <b>417<small>K+</small></b>
+                    <span>User sessions modelled for coupon recommendation</span>
+                </div>
+            </aside>
         </section>
 
-        <section id="about" class="section section-narrow about-style-3">
-            <div class="section-heading">
+        <section id="about" class="section">
+            <div class="sec-head" data-reveal>
+                <span class="sec-index">01</span>
                 <h2>About</h2>
+                <span class="sec-rule"></span>
             </div>
 
-            <div class="text-card about-editorial-card">
-                <p class="about-editorial-text">
-                    I am a Master's student in Computer Science for Digital Media at Bauhaus-Universität Weimar. My
-                    experience spans Natural Language Processing (NLP), recommender systems, and Large Language Model
-                    (LLMs) applications. I enjoy building end-to-end intelligent systems, from data collection and
-                    feature engineering to
-                    model development.
-                    I am currently looking for a part-time opportunity where I can contribute, learn, and grow in an
-                    international environment.
+            <div class="about-grid">
+                <p class="about-text" data-reveal>
+                    I'm a Master's student in <strong>Computer Science for Digital Media</strong> at
+                    Bauhaus-Universität Weimar. My experience spans Natural Language Processing, recommender systems
+                    and Large Language Model applications. I enjoy building end-to-end intelligent systems — from data
+                    collection and feature engineering all the way to model development and deployment. I'm currently
+                    looking for a part-time opportunity where I can contribute, learn and grow in an international
+                    environment.
                 </p>
+                <ul class="fact-list" data-reveal>
+                    <li><span>Focus</span>ML · NLP · LLM Systems</li>
+                    <li><span>Studying</span>M.Sc. CS4DM, Bauhaus-Universität Weimar</li>
+                    <li><span>Based in</span>Weimar, Germany</li>
+                    <li><span>Status</span>Available part-time</li>
+                </ul>
             </div>
         </section>
 
-        <section id="projects" class="section projects-section">
-            <div class="section-heading centered">
-                <h2>Featured Projects</h2>
+        <section id="projects" class="section">
+            <div class="sec-head" data-reveal>
+                <span class="sec-index">02</span>
+                <h2>Selected Work</h2>
+                <span class="sec-rule"></span>
             </div>
 
-            <div class="project-grid featured-layout">
-                <article class="project-card project-card-featured">
-                    <div class="project-content">
-                        <h3>Product Attribute Extraction with LLMs and VLMs</h3>
-                        <p>AI pipeline for validating product attributes from images using
-                            LLMs, VLMs, rule-based checks, FastAPI, and Django.</p>
-                        <ul class="project-highlights">
-                            <li>Combines visual understanding with rule-based validation.
-                            </li>
-                            <li>Designed to reduce manual product review workload.</li>
+            <div class="bento">
+                <article class="card card-wide" data-reveal data-tilt>
+                    <div class="card-body">
+                        <p class="card-kicker">LLM · Vision-Language</p>
+                        <h3>Product Attribute Extraction with LLMs &amp; VLMs</h3>
+                        <p class="card-text">
+                            An AI pipeline that validates product attributes straight from images by combining LLMs,
+                            VLMs and rule-based checks, served through FastAPI and Django.
+                        </p>
+                        <ul class="bullets">
+                            <li>Fuses visual understanding with deterministic rule validation</li>
+                            <li>Built to cut down manual product review workload</li>
                         </ul>
-                        <span class="inline-metric">~90% accuracy</span>
+                        <div class="card-foot">
+                            <span class="metric">~90% accuracy</span>
+                            <ul class="tags">
+                                <li>FastAPI</li>
+                                <li>Django</li>
+                                <li>VLM</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="project-media-pair large-media">
-                        <figure class="project-figure">
-                            <img class="project-media" src="assets/images/vqa/ottoman.jpg"
-                                alt="VQA attribute extraction input image" loading="lazy">
+                    <div class="card-media pair">
+                        <figure>
+                            <img src="assets/images/vqa/ottoman.jpg" alt="Product photo used as pipeline input"
+                                loading="lazy">
                             <figcaption>Input</figcaption>
                         </figure>
-                        <figure class="project-figure">
-                            <img class="project-media full-image" src="assets/images/vqa/vqa-output.png"
-                                alt="VQA attribute extraction output image" loading="lazy">
+                        <figure>
+                            <img class="contain" src="assets/images/vqa/vqa-output.png"
+                                alt="Extracted product attributes output" loading="lazy">
                             <figcaption>Output</figcaption>
+                            <a class="expand" href="assets/images/vqa/vqa-output.png" target="_blank"
+                                rel="noreferrer">Full size<i class="arrow">↗</i></a>
                         </figure>
                     </div>
                 </article>
 
-                <article class="project-card project-card-featured reverse">
-                    <div class="project-content">
+                <article class="card card-wide flip" data-reveal data-tilt>
+                    <div class="card-body">
+                        <p class="card-kicker">Vision-Language · Automation</p>
                         <h3>Dimensional Image Generation</h3>
-                        <p>Vision-language model pipeline for detecting product
-                            measurements and drawing dimensional arrows on product images.</p>
-                        <ul class="project-highlights">
-                            <li>Turns raw product photos into annotated measurement
-                                visuals.</li>
-                            <li>Built for practical e-commerce image enrichment.</li>
+                        <p class="card-text">
+                            A vision-language pipeline that detects product measurements and renders dimensional arrows
+                            directly onto product photography.
+                        </p>
+                        <ul class="bullets">
+                            <li>Turns raw product photos into annotated measurement visuals</li>
+                            <li>Designed for practical e-commerce image enrichment</li>
                         </ul>
-                        <span class="inline-metric">~90% accuracy</span>
+                        <div class="card-foot">
+                            <span class="metric">~90% accuracy</span>
+                            <ul class="tags">
+                                <li>VLM</li>
+                                <li>OpenCV</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="project-media-pair large-media">
-                        <figure class="project-figure">
-                            <img class="project-media" src="assets/images/dimensional/pantry-cabinet.jpg"
-                                alt="Dimensional generation before image" loading="lazy">
+                    <div class="card-media pair">
+                        <figure>
+                            <img src="assets/images/dimensional/pantry-cabinet.jpg"
+                                alt="Product photo before annotation" loading="lazy">
                             <figcaption>Before</figcaption>
                         </figure>
-                        <figure class="project-figure">
-                            <img class="project-media" src="assets/images/dimensional/dimensional.jpg"
-                                alt="Dimensional generation after image" loading="lazy">
+                        <figure>
+                            <img class="zoom" src="assets/images/dimensional/dimensional.jpg"
+                                alt="Product photo with dimensional arrows drawn on" loading="lazy">
                             <figcaption>After</figcaption>
                         </figure>
                     </div>
                 </article>
 
-                <article class="project-card compact-card">
-                    <div class="project-content">
+                <article class="card" data-reveal data-tilt>
+                    <div class="card-body">
+                        <p class="card-kicker">NLP · Classification</p>
                         <h3>Depression Detection from Reddit Texts</h3>
-                        <p>NLP and machine learning project for detecting signs of
-                            depression from Reddit user posts, using feature engineering and multiple classifiers.</p>
-                        <span class="inline-metric">87.8% accuracy</span>
+                        <p class="card-text">
+                            NLP and machine-learning pipeline that detects signals of depression in Reddit posts through
+                            feature engineering and an ensemble of classifiers.
+                        </p>
+                        <div class="card-foot">
+                            <span class="metric">87.8% accuracy</span>
+                            <ul class="tags">
+                                <li>scikit-learn</li>
+                                <li>Feature Eng.</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="workflow-frame">
-                        <img class="project-media" src="assets/images/depression-detection/workflow.png"
-                            alt="Depression detection workflow diagram" loading="lazy">
+                    <div class="card-media">
+                        <figure class="diagram">
+                            <img src="assets/images/depression-detection/workflow.png"
+                                alt="Depression detection workflow diagram" loading="lazy">
+                            <a class="expand" href="assets/images/depression-detection/workflow.png" target="_blank"
+                                rel="noreferrer">Full diagram<i class="arrow">↗</i></a>
+                        </figure>
                     </div>
                 </article>
 
-                <article class="project-card compact-card">
-                    <div class="project-content">
+                <article class="card" data-reveal data-tilt>
+                    <div class="card-body">
+                        <p class="card-kicker">Linear Algebra · CV</p>
                         <h3>PCA-Based Facial Gesture Analysis</h3>
-                        <p>Linear algebra project using PCA to analyze facial gestures and
-                            transfer expressions between people.</p>
+                        <p class="card-text">
+                            Principal component analysis applied to facial landmarks to decompose gestures and transfer
+                            expressions between different people.
+                        </p>
+                        <div class="card-foot">
+                            <a class="metric link" href="https://github.com/HanaMsmi/Gesture_Transfer_With_Appearance"
+                                target="_blank" rel="noreferrer">View on GitHub<i class="arrow">↗</i></a>
+                            <ul class="tags">
+                                <li>PCA</li>
+                                <li>NumPy</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="media-stack">
-                        <img class="project-media stack-main" src="assets/images/linear-algebra/plots.png"
+                    <div class="card-media stack">
+                        <img class="contain" src="assets/images/linear-algebra/plots.png"
                             alt="PCA facial gesture analysis plots" loading="lazy">
-                        <div class="video-grid">
-                            <video class="project-media" controls preload="metadata">
+                        <div class="videos">
+                            <video controls preload="metadata" playsinline>
                                 <source src="assets/videos/points.mp4" type="video/mp4">
                             </video>
-                            <video class="project-media" controls preload="metadata">
+                            <video controls preload="metadata" playsinline>
                                 <source src="assets/videos/transferred.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
-                    <a class="project-link" href="https://github.com/HanaMsmi/Gesture_Transfer_With_Appearance"
-                        target="_blank" rel="noreferrer">GitHub</a>
                 </article>
             </div>
         </section>
 
-        <section id="experience" class="section section-narrow">
-            <div class="section-heading">
-                <h2>Professional Experience</h2>
+        <section id="experience" class="section">
+            <div class="sec-head" data-reveal>
+                <span class="sec-index">03</span>
+                <h2>Experience</h2>
+                <span class="sec-rule"></span>
             </div>
 
-            <div class="timeline">
-                <article class="experience-item">
-                    <p class="experience-meta">Feb 2024 - Mar 2026 - Remote</p>
-                    <h3>Data Scientist - Data Co Lab</h3>
-                    <ul>
-                        <li>Built a food recommender system using collaborative
-                            filtering and content-based methods; solved cold-start problem using popularity-based
-                            techniques.</li>
-                        <li>Developed an AI-based product validation system using
-                            multiple LLMs to verify product attributes from images (~90% accuracy), reducing manual
-                            workload significantly.</li>
-                        <li>Designed a vision-language pipeline for extracting product
-                            dimensions and generating annotated images (~90% accuracy).</li>
-                        <li>Built and deployed APIs using FastAPI and integrated
-                            backend services using Django.</li>
-                        <li>Developed an AI voice assistant for restaurant order
-                            handling using STT to LLM to TTS pipeline; reduced operational costs by 20% through caching
-                            strategies.</li>
-                        <li>Worked on LLM-based chatbot systems using prompt
-                            engineering, RAG, fine-tuning, and memory handling.</li>
+            <ol class="timeline">
+                <li class="job" data-reveal>
+                    <div class="job-head">
+                        <h3>Data Scientist</h3>
+                        <p class="job-org">Data Co Lab <span>· Remote</span></p>
+                        <p class="job-date">Feb 2024 — Mar 2026</p>
+                    </div>
+                    <ul class="bullets">
+                        <li>Built a food recommender system with collaborative and content-based filtering, solving
+                            cold-start with popularity-based techniques.</li>
+                        <li>Developed an AI product-validation system using multiple LLMs to verify attributes from
+                            images at ~90% accuracy, sharply reducing manual workload.</li>
+                        <li>Designed a vision-language pipeline extracting product dimensions and generating annotated
+                            images at ~90% accuracy.</li>
+                        <li>Built and deployed APIs with FastAPI and integrated backend services in Django.</li>
+                        <li>Shipped an AI voice assistant for restaurant orders (STT → LLM → TTS), cutting operational
+                            cost 20% through caching strategies.</li>
+                        <li>Worked on LLM chatbots using prompt engineering, RAG, fine-tuning and memory handling.</li>
                     </ul>
-                </article>
+                </li>
 
-                <article class="experience-item">
-                    <p class="experience-meta">Jul 2022 - Sep 2022</p>
-                    <h3>Data Science Intern - Iran Telecommunication Research Center (ITRC)</h3>
-                    <ul>
-                        <li>Reproduced a research paper on coupon recommendation
-                            systems for e-commerce.</li>
-                        <li>Used Kaggle dataset with 417K+ user sessions.</li>
+                <li class="job" data-reveal>
+                    <div class="job-head">
+                        <h3>Data Science Intern</h3>
+                        <p class="job-org">Iran Telecommunication Research Center <span>· ITRC</span></p>
+                        <p class="job-date">Jul 2022 — Sep 2022</p>
+                    </div>
+                    <ul class="bullets">
+                        <li>Reproduced a research paper on coupon recommendation systems for e-commerce.</li>
+                        <li>Modelled a Kaggle dataset of 417K+ user sessions.</li>
                         <li>Implemented XGBoost and CatBoost models using Keras.</li>
-                        <li>Applied techniques such as k-fold cross-validation, early
-                            stopping, and class weighting.</li>
-                        <li>Improved model performance through hyperparameter tuning.
-                        </li>
+                        <li>Applied k-fold cross-validation, early stopping and class weighting.</li>
+                        <li>Improved performance through systematic hyperparameter tuning.</li>
                     </ul>
-                </article>
-            </div>
+                </li>
+            </ol>
         </section>
 
         <section id="skills" class="section">
-            <div class="section-heading centered">
+            <div class="sec-head" data-reveal>
+                <span class="sec-index">04</span>
                 <h2>Skills</h2>
+                <span class="sec-rule"></span>
             </div>
-            <div class="skills-grid">
-                <article>
-                    <h3>Machine Learning and AI</h3>
-                    <p>Machine Learning, Deep Learning, NLP, Recommender Systems, Data
-                        Analysis</p>
-                </article>
-                <article>
-                    <h3>LLMs and Generative AI</h3>
-                    <p>Prompt Engineering, RAG, Fine-tuning, AI Agents, VLMs, STT and TTS
-                        Pipelines</p>
-                </article>
-                <article>
-                    <h3>Programming and Tools</h3>
-                    <p>Python, SQL, Git, Docker, MS Office</p>
-                </article>
-                <article>
+
+            <div class="skills">
+                <div class="skill-row" data-reveal>
+                    <h3>Machine Learning &amp; AI</h3>
+                    <ul class="tags">
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>NLP</li>
+                        <li>Recommender Systems</li>
+                        <li>Data Analysis</li>
+                    </ul>
+                </div>
+                <div class="skill-row" data-reveal>
+                    <h3>LLMs &amp; Generative AI</h3>
+                    <ul class="tags">
+                        <li>Prompt Engineering</li>
+                        <li>RAG</li>
+                        <li>Fine-tuning</li>
+                        <li>AI Agents</li>
+                        <li>VLMs</li>
+                        <li>STT / TTS</li>
+                    </ul>
+                </div>
+                <div class="skill-row" data-reveal>
                     <h3>Frameworks</h3>
-                    <p>PyTorch, Keras, FastAPI, Django</p>
-                </article>
+                    <ul class="tags">
+                        <li>PyTorch</li>
+                        <li>Keras</li>
+                        <li>FastAPI</li>
+                        <li>Django</li>
+                    </ul>
+                </div>
+                <div class="skill-row" data-reveal>
+                    <h3>Programming &amp; Tools</h3>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <li>MS Office</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section id="contact" class="section contact">
-            <div class="contact-card">
-                <p class="eyebrow">Let’s connect</p>
-                <h2>Contact</h2>
-                <p><span>Email</span>: <a href="mailto:hannahmasoomi@gmail.com">hannahmasoomi@gmail.com</a></p>
-                <p class="contact-links">
-                    <a href="https://www.linkedin.com/in/hanamsmi/" target="_blank" rel="noreferrer">LinkedIn</a>
-                    <a href="https://github.com/haniehmasoomi" target="_blank" rel="noreferrer">GitHub</a>
-                </p>
+            <div class="contact-inner" data-reveal>
+                <p class="status"><i></i>Available for part-time work</p>
+                <br>
+                <a class="mail" href="mailto:hannahmasoomi@gmail.com">hannahmasoomi@gmail.com</a>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/hanamsmi/" target="_blank" rel="noreferrer">LinkedIn<i
+                            class="arrow">↗</i></a>
+                    <a href="https://github.com/haniehmasoomi" target="_blank" rel="noreferrer">GitHub<i
+                            class="arrow">↗</i></a>
+                </div>
             </div>
+            <p class="copyright">© <span id="year">2026</span> Hanieh Masoomi</p>
         </section>
     </main>
 
