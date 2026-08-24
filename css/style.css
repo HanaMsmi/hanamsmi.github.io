@@ -568,9 +568,27 @@ main {
 
 .about-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
+    grid-template-columns: minmax(0, 0.55fr) minmax(0, 1.25fr) minmax(0, 0.7fr);
     gap: clamp(1.25rem, 3vw, 2.5rem);
     align-items: start;
+}
+
+.portrait {
+    overflow: hidden;
+    max-width: 240px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: #f7f8fc;
+}
+
+/* barely any headroom above the hair in the source, so the zoom pivots on the top edge */
+.portrait img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    transform: scale(1.3);
+    transform-origin: 50% 0;
 }
 
 .about-text {
@@ -664,6 +682,15 @@ main {
     display: grid;
     grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
     align-items: stretch;
+}
+
+/* lead card: copy on top, media spanning the full width so 16:9 stills stay large */
+.card-feature {
+    grid-column: 1 / -1;
+}
+
+.card-feature .card-body {
+    max-width: 78ch;
 }
 
 .card-wide.flip .card-body {
@@ -811,6 +838,21 @@ main {
     padding: 0.45rem;
     object-fit: contain;
     background: #f7f8fc;
+}
+
+/* 16:9 sources would lose their edges in the default portrait-ish frame.
+   Centring stops the card-wide row from stretching the frame past that ratio. */
+.card-media.pair.landscape {
+    align-items: center;
+}
+
+.card-media.pair.landscape figure {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.card-media.pair.landscape figure img {
+    min-height: 0;
 }
 
 .card:hover .card-media.pair figure img {
@@ -1137,6 +1179,10 @@ main {
     .about-grid,
     .card-wide {
         grid-template-columns: 1fr;
+    }
+
+    .portrait {
+        max-width: 220px;
     }
 
     .card-wide.flip .card-body,
