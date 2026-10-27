@@ -4,415 +4,429 @@
 <head>
     <meta name="google-site-verification" content="jiRS6VHfku-ZBhrmrGmowsdK9MGPzxn_c3yRbM3N36k" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="description"
-        content="Portfolio of Hanieh Masoomi, Computer Science for Digital Media master's student focused on machine learning, NLP, computer vision, LLM systems, and backend APIs." />
-    <meta name="theme-color" content="#07070d" />
+        content="Hanieh Masoomi: machine learning, NLP, computer vision and LLM systems. M.Sc. Computer Science for Digital Media, Bauhaus-Universität Weimar." />
+    <meta name="theme-color" content="#fff4e2" />
     <title>Hanieh Masoomi | ML & LLM Engineer</title>
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='38' r='20' fill='%233a2118'/%3E%3Ccircle cx='13' cy='15' r='11' fill='%233a2118'/%3E%3Ccircle cx='51' cy='15' r='11' fill='%233a2118'/%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
-
-    <div class="backdrop" aria-hidden="true">
-        <div class="orb orb-a"></div>
-        <div class="orb orb-b"></div>
-        <div class="orb orb-c"></div>
-        <div class="grid-lines"></div>
-        <div class="noise"></div>
+    <!-- soft background: tint changes per page, ears drift around -->
+    <div class="bg" aria-hidden="true">
+        <svg class="bg-ears" viewBox="0 0 200 180">
+            <circle cx="100" cy="112" r="62" />
+            <circle cx="38" cy="38" r="36" />
+            <circle cx="162" cy="38" r="36" />
+        </svg>
     </div>
 
-    <header class="nav" id="nav">
-        <a class="brand" href="#top">
-            <span class="brand-mark">HM</span>
-            <span class="brand-text">Hanieh Masoomi</span>
-        </a>
-
-        <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
-            <a href="#about"><span>01</span>About</a>
-            <a href="#projects"><span>02</span>Work</a>
-            <a href="#experience"><span>03</span>Experience</a>
-            <a href="#skills"><span>04</span>Skills</a>
-            <a href="#contact"><span>05</span>Contact</a>
-        </nav>
-
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-            <span></span><span></span>
+    <header class="top">
+        <button class="logo" id="home" aria-label="Back to the cover">
+            <svg viewBox="0 0 64 60" aria-hidden="true">
+                <circle cx="32" cy="38" r="20" />
+                <circle cx="13" cy="15" r="11" />
+                <circle cx="51" cy="15" r="11" />
+            </svg>
         </button>
+        <p class="count" aria-live="polite"><b id="countNow">01</b><span id="countTotal">/ 10</span></p>
     </header>
 
-    <main id="top">
-        <section class="hero">
-            <div class="hero-copy" data-reveal>
-                <p class="status"><i></i>Open to part-time roles · Weimar, Germany</p>
-                <h1>
-                    Building <em>intelligent</em> systems
-                    <span class="line-2">end&nbsp;to&nbsp;end.</span>
-                </h1>
-                <p class="lede">
-                    I'm <strong>Hanieh Masoomi</strong> — a Computer Science for Digital Media master's student working
-                    across NLP, recommender systems, vision-language models and production LLM pipelines.
-                </p>
-                <div class="hero-actions">
-                    <a class="btn btn-primary" href="#projects">See the work<i class="arrow">→</i></a>
-                    <a class="btn btn-ghost" href="mailto:hannahmasoomi@gmail.com">Get in touch</a>
-                </div>
-                <ul class="chip-row">
-                    <li>NLP</li>
-                    <li>LLM Systems</li>
-                    <li>RAG</li>
-                    <li>Computer Vision</li>
-                    <li>Recommenders</li>
-                    <li>FastAPI</li>
-                    <li>PyTorch</li>
-                </ul>
-            </div>
+    <main class="book" id="book">
 
-            <aside class="hero-stats" data-reveal>
-                <div class="stat">
-                    <b>~90<small>%</small></b>
-                    <span>Attribute extraction accuracy with LLM + VLM pipeline</span>
-                </div>
-                <div class="stat">
-                    <b>87.8<small>%</small></b>
-                    <span>Depression detection accuracy from Reddit text</span>
-                </div>
-                <div class="stat">
-                    <b>20<small>%</small></b>
-                    <span>Operational cost cut on a voice-assistant pipeline</span>
-                </div>
-                <div class="stat">
-                    <b>417<small>K+</small></b>
-                    <span>User sessions modelled for coupon recommendation</span>
-                </div>
-            </aside>
+        <!-- ───────────── cover ───────────── -->
+        <section class="page cover" data-slug="hello" data-label="Hello" data-tint="cream" data-ears="r">
+            <div class="info">
+                <h1>Hanieh<br>Masoomi</h1>
+                <p class="blurb">Machine learning, NLP &amp; LLM systems</p>
+                <button class="open" data-next>Open <i aria-hidden="true">→</i></button>
+            </div>
+            <div class="visual cover-art">
+                <div class="sun" aria-hidden="true"></div>
+                <img class="mickey" src="assets/images/mickey/mickey-steamboat-willie.svg"
+                    alt="Mickey Mouse at the ship's wheel, from Steamboat Willie (1928)" />
+                <p class="credit">Mickey from Steamboat Willie (1928), public domain</p>
+                <svg class="mug" viewBox="0 0 220 230" role="img" aria-label="A mug of hot chocolate with marshmallow ears">
+                    <g class="steam" fill="none" stroke="#3a2118" stroke-width="5" stroke-linecap="round" opacity=".35">
+                        <path d="M80 62c-12-14 12-22 0-38" />
+                        <path d="M112 66c-12-14 12-22 0-42" />
+                        <path d="M144 62c-12-14 12-22 0-38" />
+                    </g>
+                    <path d="M176 118h18a24 24 0 0 1 0 48h-26" fill="none" stroke="#e1262d" stroke-width="14"
+                        stroke-linecap="round" />
+                    <path d="M34 98h146v66a46 46 0 0 1-46 46H80a46 46 0 0 1-46-46z" fill="#e1262d" />
+                    <ellipse cx="107" cy="98" rx="73" ry="16" fill="#8a4a2e" />
+                    <ellipse cx="107" cy="98" rx="60" ry="10" fill="#5b2f1d" />
+                    <g class="mallow" fill="#fffaf0" stroke="#e9d9c0" stroke-width="2">
+                        <circle class="m1" cx="107" cy="96" r="19" />
+                        <circle class="m2" cx="78" cy="82" r="11" />
+                        <circle class="m3" cx="136" cy="82" r="11" />
+                    </g>
+                    <circle cx="86" cy="170" r="7" fill="#fff4e2" />
+                    <circle cx="124" cy="170" r="7" fill="#fff4e2" />
+                </svg>
+            </div>
         </section>
 
-        <section id="about" class="section">
-            <div class="sec-head" data-reveal>
-                <span class="sec-index">01</span>
-                <h2>About</h2>
-                <span class="sec-rule"></span>
+        <!-- ───────────── 2026 · ECG study ───────────── -->
+        <section class="page" data-slug="music-origin" data-label="Music origin study" data-tint="blush" data-ears="l">
+            <div class="info">
+                <p class="year">2026</p>
+                <p class="kicker">M.Sc. · Bauhaus-Universität Weimar</p>
+                <h2>Perceived Music Origin</h2>
+                <p class="blurb">Every track was AI-made. Only the label changed.</p>
+                <ul class="facts">
+                    <li><b>21</b> listeners</li>
+                    <li><b>6</b> tracks</li>
+                    <li><b>ECG</b> · HRV</li>
+                </ul>
+                <p class="note">Revealing the label raised arousal. AI vs. human made no significant difference.</p>
+                <div class="ecg" aria-hidden="true">
+                    <svg viewBox="0 0 600 60" preserveAspectRatio="none">
+                        <g class="ecg-run">
+                            <path
+                                d="M0 30h60l8-4 8 4h30l6 4 8-30 10 52 8-26h46l8-4 8 4h60l8-4 8 4h30l6 4 8-30 10 52 8-26h46l8-4 8 4h60l8-4 8 4h30l6 4 8-30 10 52 8-26h46l8-4 8 4h60" />
+                        </g>
+                    </svg>
+                </div>
+                <a class="link" href="https://github.com/HanaMsmi/ai-music-origin-ecg-study" target="_blank"
+                    rel="noreferrer">GitHub <i aria-hidden="true">↗</i></a>
             </div>
+            <div class="visual polaroids">
+                <button class="polaroid p-a" data-zoom="assets/images/music-ecg/poster.jpeg"
+                    aria-label="Enlarge: the team presenting the study">
+                    <img src="assets/images/music-ecg/poster.jpeg" alt="The team presenting the study" loading="lazy" />
+                    <span>Presenting</span>
+                </button>
+                <button class="polaroid p-b" data-zoom="assets/images/music-ecg/procedure.png"
+                    aria-label="Enlarge: trial procedure diagram">
+                    <img src="assets/images/music-ecg/procedure.png"
+                        alt="Trial procedure: fixation, listening split by label disclosure, questionnaire"
+                        loading="lazy" />
+                    <span>One trial</span>
+                </button>
+            </div>
+        </section>
 
-            <div class="about-grid">
-                <figure class="portrait" data-reveal>
-                    <img src="assets/images/profile/photo.jpeg" alt="Portrait of Hanieh Masoomi" loading="lazy">
+        <!-- ───────────── 2024-26 · voice assistant ───────────── -->
+        <section class="page" data-slug="voice-assistant" data-label="Voice assistant" data-tint="butter" data-ears="r">
+            <div class="info">
+                <p class="year">2024 – 26</p>
+                <p class="kicker">Data Co Lab</p>
+                <h2>Voice Ordering Assistant</h2>
+                <p class="blurb">Speech in, order out.</p>
+                <ul class="facts">
+                    <li><b>−20%</b> running cost</li>
+                    <li><b>STT → LLM → TTS</b></li>
+                </ul>
+                <p class="note">Caching repeated requests skips the LLM call.</p>
+            </div>
+            <div class="visual">
+                <div class="voice" id="voice">
+                    <div class="bubble said">“Two margheritas, please.”</div>
+                    <div class="chain">
+                        <div class="node" data-n="stt">STT<small>speech → text</small></div>
+                        <div class="wire"></div>
+                        <div class="stack">
+                            <div class="node" data-n="llm">LLM<small>understands</small></div>
+                            <div class="node small" data-n="cache">Cache</div>
+                        </div>
+                        <div class="wire"></div>
+                        <div class="node" data-n="tts">TTS<small>text → speech</small></div>
+                    </div>
+                    <div class="bubble reply">“Two margheritas. Anything to drink?”</div>
+                    <label class="switch">
+                        <input type="checkbox" id="cacheToggle" />
+                        <span class="track"><span class="knob"></span></span>
+                        <span class="switch-text">Repeated request</span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- ───────────── 2024-26 · attribute extraction ───────────── -->
+        <section class="page" data-slug="attribute-extraction" data-label="Attribute extraction" data-tint="cream"
+            data-ears="l">
+            <div class="info">
+                <p class="year">2024 – 26</p>
+                <p class="kicker">Data Co Lab</p>
+                <h2>Product Attribute Extraction</h2>
+                <p class="blurb">LLMs and VLMs read a product photo and check what it claims to be.</p>
+                <ul class="facts">
+                    <li><b>~90%</b> accuracy</li>
+                    <li><b>FastAPI</b> · Django</li>
+                </ul>
+                <p class="note">Rule-based checks back up the model, so reviewers see far fewer products.</p>
+            </div>
+            <div class="visual flow">
+                <figure class="flow-in">
+                    <img src="assets/images/vqa/ottoman.jpg" alt="Product photo given to the pipeline"
+                        loading="lazy" />
+                    <figcaption>Photo</figcaption>
                 </figure>
-                <p class="about-text" data-reveal>
-                    I'm a Master's student in <strong>Computer Science for Digital Media</strong> at
-                    Bauhaus-Universität Weimar. My experience spans Natural Language Processing, recommender systems
-                    and Large Language Model applications. I enjoy building end-to-end intelligent systems — from data
-                    collection and feature engineering all the way to model development and deployment. I'm currently
-                    looking for a part-time opportunity where I can contribute, learn and grow in an international
-                    environment.
-                </p>
-                <ul class="fact-list" data-reveal>
-                    <li><span>Focus</span>ML · NLP · LLM Systems</li>
-                    <li><span>Studying</span>M.Sc. CS4DM, Bauhaus-Universität Weimar</li>
-                    <li><span>Based in</span>Weimar, Germany</li>
-                    <li><span>Status</span>Available part-time</li>
+                <span class="flow-arrow" aria-hidden="true">→</span>
+                <figure class="flow-out">
+                    <button data-zoom="assets/images/vqa/vqa-output.png" aria-label="Enlarge extracted attributes">
+                        <img src="assets/images/vqa/vqa-output.png" alt="Attributes extracted from the photo"
+                            loading="lazy" />
+                    </button>
+                    <figcaption>Attributes</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ───────────── 2024-26 · dimensional images ───────────── -->
+        <section class="page" data-slug="dimensional-images" data-label="Dimensional images" data-tint="blush"
+            data-ears="r">
+            <div class="info">
+                <p class="year">2024 – 26</p>
+                <p class="kicker">Data Co Lab</p>
+                <h2>Dimensional Images</h2>
+                <p class="blurb">A vision-language pipeline finds product measurements and draws them onto the photo.</p>
+                <ul class="facts">
+                    <li><b>~90%</b> accuracy</li>
+                    <li><b>VLM</b> · OpenCV</li>
+                </ul>
+                <p class="note">Drag the handle.</p>
+            </div>
+            <div class="visual">
+                <div class="compare" id="compare" data-no-swipe>
+                    <img class="c-before" src="assets/images/dimensional/pantry-cabinet.jpg"
+                        alt="Product photo, before" loading="lazy" />
+                    <img class="c-after" src="assets/images/dimensional/dimensional.jpg"
+                        alt="Same photo with dimension arrows" loading="lazy" />
+                    <span class="tag t-before">Before</span>
+                    <span class="tag t-after">After</span>
+                    <div class="handle" aria-hidden="true"><i></i></div>
+                    <input type="range" min="0" max="100" value="50" aria-label="Compare before and after" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ───────────── 2022-24 · student assistant ───────────── -->
+        <section class="page" data-slug="teaching" data-label="Teaching" data-tint="butter" data-ears="l">
+            <div class="info">
+                <p class="year">2022 – 24</p>
+                <p class="kicker">K. N. Toosi University of Technology</p>
+                <h2>Student Assistant</h2>
+                <p class="blurb">Helping classmates through the maths behind machine learning.</p>
+            </div>
+            <div class="visual formulas">
+                <div class="formula f1"><small>Probability</small><span>P(A|B) = P(B|A)·P(A) / P(B)</span></div>
+                <div class="formula f2"><small>Statistics</small><span>σ² = E[(X − μ)²]</span></div>
+                <div class="formula f3"><small>Linear algebra</small><span>A·v = λ·v</span></div>
+            </div>
+        </section>
+
+        <!-- ───────────── 2022 · ITRC ───────────── -->
+        <section class="page" data-slug="coupon-recommendation" data-label="Coupon recommendation" data-tint="cream"
+            data-ears="r">
+            <div class="info">
+                <p class="year">2022</p>
+                <p class="kicker">Intern · Iran Telecommunication Research Center</p>
+                <h2>Who Gets the Coupon?</h2>
+                <p class="blurb">Reproduced a research paper on predicting shopper behaviour to target coupons.</p>
+                <ul class="facts">
+                    <li><b>417K+</b> sessions</li>
+                    <li><b>XGBoost</b> · CatBoost</li>
+                    <li><b>Keras</b></li>
+                </ul>
+                <p class="note">k-fold validation, early stopping, class weights and tuning.</p>
+            </div>
+            <div class="visual paper-wrap">
+                <button class="paper" data-zoom="assets/images/internship/internship_paper.png"
+                    aria-label="Enlarge the reproduced paper">
+                    <img src="assets/images/internship/internship_paper.png"
+                        alt="First page of the reproduced paper on predicting online shopping behaviour" loading="lazy" />
+                    <span class="stamp">Reproduced</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- ───────────── 2021-23 · depression detection ───────────── -->
+        <section class="page" data-slug="depression-detection" data-label="Depression detection" data-tint="blush"
+            data-ears="l">
+            <div class="info">
+                <p class="year">2021 – 23</p>
+                <p class="kicker">Research Assistant · K. N. Toosi University</p>
+                <h2>Spotting Depression in Reddit Posts</h2>
+                <p class="blurb">Text goes in, classic ML models vote.</p>
+                <ul class="facts">
+                    <li><b>87.8%</b> accuracy</li>
+                    <li><b>6</b> classifiers</li>
+                    <li><b>618</b> features</li>
+                </ul>
+                <p class="note">Collected through Reddit's public API. Posts shown are made up.</p>
+            </div>
+            <div class="visual">
+                <div class="lab" id="lab">
+                    <ol class="steps" role="tablist" aria-label="Pipeline steps">
+                        <li><button role="tab" data-step="0">Collect</button></li>
+                        <li><button role="tab" data-step="1">Label</button></li>
+                        <li><button role="tab" data-step="2">Balance</button></li>
+                        <li><button role="tab" data-step="3">Features</button></li>
+                        <li><button role="tab" data-step="4">Classify</button></li>
+                    </ol>
+
+                    <div class="stage">
+                        <!-- 0 collect -->
+                        <div class="scene" data-scene="0">
+                            <div class="src">
+                                <span class="pill hot">Depression</span>
+                                <span class="plus">vs.</span>
+                                <div class="pills">
+                                    <span class="pill">Meditation</span>
+                                    <span class="pill">Spirituality</span>
+                                    <span class="pill">Gym</span>
+                                    <span class="pill">Awakened</span>
+                                    <span class="pill">Inspiration</span>
+                                </div>
+                            </div>
+                            <p class="cap">Posts from Reddit communities</p>
+                        </div>
+
+                        <!-- 1 label -->
+                        <div class="scene" data-scene="1">
+                            <div class="two">
+                                <div class="bin bin-d">
+                                    <div class="cards"><i></i><i></i><i></i></div>
+                                    <b>Depressed</b>
+                                </div>
+                                <div class="bin bin-n">
+                                    <div class="cards"><i></i><i></i><i></i></div>
+                                    <b>Non-depressed</b>
+                                </div>
+                            </div>
+                            <p class="cap">Each post gets a label from its community</p>
+                        </div>
+
+                        <!-- 2 balance -->
+                        <div class="scene" data-scene="2">
+                            <div class="two bars">
+                                <div class="bar bar-d"><span style="--h:100%"></span><b>1432</b></div>
+                                <div class="bar bar-n"><span style="--h:100%"></span><b>1432</b></div>
+                            </div>
+                            <p class="cap">Pruned and balanced, equal classes</p>
+                        </div>
+
+                        <!-- 3 features -->
+                        <div class="scene" data-scene="3">
+                            <div class="matrix" id="matrix" aria-hidden="true"></div>
+                            <p class="cap">2864 posts × 618 features</p>
+                        </div>
+
+                        <!-- 4 classify -->
+                        <div class="scene" data-scene="4">
+                            <div class="try">
+                                <button class="post" data-sample="0">“Can’t remember the last time I felt anything. Everything is heavy.”</button>
+                                <button class="post" data-sample="1">“Morning run, then meditation. Grateful for small things today.”</button>
+                            </div>
+                            <ul class="votes" id="votes">
+                                <li data-m="KNN">KNN</li>
+                                <li data-m="SVM">SVM</li>
+                                <li data-m="DT">DT</li>
+                                <li data-m="RF">RF</li>
+                                <li data-m="GNB">GNB</li>
+                                <li data-m="CatBoost">CatBoost</li>
+                            </ul>
+                            <p class="cap result" id="verdict">Pick a post</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ───────────── bachelor's · PCA ───────────── -->
+        <section class="page" data-slug="face-gestures" data-label="Face gestures with PCA" data-tint="butter"
+            data-ears="r">
+            <div class="info">
+                <p class="year">B.Sc.</p>
+                <p class="kicker">Linear Algebra's course project · K. N. Toosi University</p>
+                <h2>Face Gestures with PCA</h2>
+                <p class="blurb">Principal components of facial landmarks, used to move one person's expression onto another.</p>
+                <ul class="facts">
+                    <li><b>PCA</b></li>
+                    <li><b>NumPy</b></li>
+                </ul>
+                <a class="link" href="https://github.com/HanaMsmi/Gesture_Transfer_With_Appearance" target="_blank"
+                    rel="noreferrer">GitHub <i aria-hidden="true">↗</i></a>
+            </div>
+            <div class="visual clips">
+                <figure>
+                    <video muted loop playsinline preload="metadata" data-autoplay>
+                        <source src="assets/videos/points.mp4" type="video/mp4" />
+                    </video>
+                    <figcaption>Landmarks</figcaption>
+                </figure>
+                <span class="flow-arrow" aria-hidden="true">→</span>
+                <figure>
+                    <video muted loop playsinline preload="metadata" data-autoplay>
+                        <source src="assets/videos/transferred.mp4" type="video/mp4" />
+                    </video>
+                    <figcaption>Transferred</figcaption>
+                </figure>
+                <button class="strip" data-zoom="assets/images/linear-algebra/plots.png"
+                    aria-label="Enlarge the landmark plots">
+                    <img src="assets/images/linear-algebra/plots.png" alt="Grid of facial landmark plots" loading="lazy" />
+                </button>
+            </div>
+        </section>
+
+        <!-- ───────────── hello / contact ───────────── -->
+        <section class="page end" data-slug="contact" data-label="Say hi" data-tint="cream" data-ears="l">
+            <div class="info">
+                <p class="status"><i></i>Open to part-time roles · Weimar</p>
+                <a class="mail" href="mailto:hannahmasoomi@gmail.com">hannahmasoomi@gmail.com</a>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/hanamsmi/" target="_blank" rel="noreferrer">LinkedIn
+                        <i aria-hidden="true">↗</i></a>
+                    <a href="https://github.com/HanaMsmi" target="_blank" rel="noreferrer">GitHub <i
+                            aria-hidden="true">↗</i></a>
+                </div>
+                <ul class="edu">
+                    <li><b>M.Sc.</b> Computer Science for Digital Media · Bauhaus-Universität Weimar <small>2026 –</small></li>
+                    <li><b>B.Sc.</b> Computer Engineering · K. N. Toosi University <small>2018 – 23</small></li>
+                </ul>
+                <ul class="chips">
+                    <li>Python</li>
+                    <li>PyTorch</li>
+                    <li>Keras</li>
+                    <li>FastAPI</li>
+                    <li>Django</li>
+                    <li>LangChain</li>
+                    <li>Google ADK</li>
+                    <li>SQL</li>
+                    <li>Docker</li>
+                    <li>Git</li>
                 </ul>
             </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="sec-head" data-reveal>
-                <span class="sec-index">02</span>
-                <h2>Selected Work</h2>
-                <span class="sec-rule"></span>
-            </div>
-
-            <div class="bento">
-                <article class="card card-feature" data-reveal data-tilt>
-                    <div class="card-body">
-                        <p class="card-kicker">Physiological Computing · ECG</p>
-                        <h3>Perceived Music Origin &amp; Listener Engagement</h3>
-                        <p class="card-text">
-                            An ECG-based experiment on whether believing a track is AI-generated or human-composed
-                            changes physiological engagement. Every track was in fact AI-generated — only the origin
-                            label shown to the listener differed.
-                        </p>
-                        <ul class="bullets">
-                            <li>21 participants, 6 AI tracks, ECG recorded with a Polar H10 sensor</li>
-                            <li>HRV analysed through RMSSD with paired t-tests and Cohen's <em>d</em></li>
-                            <li>Arousal rose after the label was disclosed, but AI vs. human was not significant</li>
-                        </ul>
-                        <div class="card-foot">
-                            <a class="metric link" href="https://github.com/HanaMsmi/ai-music-origin-ecg-study"
-                                target="_blank" rel="noreferrer">View on GitHub<i class="arrow">↗</i></a>
-                            <ul class="tags">
-                                <li>ECG</li>
-                                <li>HRV</li>
-                                <li>Statistics</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card-media pair landscape">
-                        <figure>
-                            <img class="contain" src="assets/images/music-ecg/procedure.png"
-                                alt="Trial procedure: fixation, music listening split by origin label disclosure, then questionnaire"
-                                loading="lazy">
-                            <figcaption>Procedure</figcaption>
-                            <a class="expand" href="assets/images/music-ecg/procedure.png" target="_blank"
-                                rel="noreferrer">Full size<i class="arrow">↗</i></a>
-                        </figure>
-                        <figure>
-                            <img src="assets/images/music-ecg/poster.jpeg"
-                                alt="Our team presenting the study at Bauhaus-Universität Weimar" loading="lazy">
-                            <figcaption>Presenting our work</figcaption>
-                        </figure>
-                    </div>
-                </article>
-
-                <article class="card card-wide" data-reveal data-tilt>
-                    <div class="card-body">
-                        <p class="card-kicker">LLM · Vision-Language</p>
-                        <h3>Product Attribute Extraction with LLMs &amp; VLMs</h3>
-                        <p class="card-text">
-                            An AI pipeline that validates product attributes straight from images by combining LLMs,
-                            VLMs and rule-based checks, served through FastAPI and Django.
-                        </p>
-                        <ul class="bullets">
-                            <li>Fuses visual understanding with deterministic rule validation</li>
-                            <li>Built to cut down manual product review workload</li>
-                        </ul>
-                        <div class="card-foot">
-                            <span class="metric">~90% accuracy</span>
-                            <ul class="tags">
-                                <li>FastAPI</li>
-                                <li>Django</li>
-                                <li>VLM</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card-media pair">
-                        <figure>
-                            <img src="assets/images/vqa/ottoman.jpg" alt="Product photo used as pipeline input"
-                                loading="lazy">
-                            <figcaption>Input</figcaption>
-                        </figure>
-                        <figure>
-                            <img class="contain" src="assets/images/vqa/vqa-output.png"
-                                alt="Extracted product attributes output" loading="lazy">
-                            <figcaption>Output</figcaption>
-                            <a class="expand" href="assets/images/vqa/vqa-output.png" target="_blank"
-                                rel="noreferrer">Full size<i class="arrow">↗</i></a>
-                        </figure>
-                    </div>
-                </article>
-
-                <article class="card card-wide flip" data-reveal data-tilt>
-                    <div class="card-body">
-                        <p class="card-kicker">Vision-Language · Automation</p>
-                        <h3>Dimensional Image Generation</h3>
-                        <p class="card-text">
-                            A vision-language pipeline that detects product measurements and renders dimensional arrows
-                            directly onto product photography.
-                        </p>
-                        <ul class="bullets">
-                            <li>Turns raw product photos into annotated measurement visuals</li>
-                            <li>Designed for practical e-commerce image enrichment</li>
-                        </ul>
-                        <div class="card-foot">
-                            <span class="metric">~90% accuracy</span>
-                            <ul class="tags">
-                                <li>VLM</li>
-                                <li>OpenCV</li>
-                                <li>Python</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card-media pair">
-                        <figure>
-                            <img src="assets/images/dimensional/pantry-cabinet.jpg"
-                                alt="Product photo before annotation" loading="lazy">
-                            <figcaption>Before</figcaption>
-                        </figure>
-                        <figure>
-                            <img class="zoom" src="assets/images/dimensional/dimensional.jpg"
-                                alt="Product photo with dimensional arrows drawn on" loading="lazy">
-                            <figcaption>After</figcaption>
-                        </figure>
-                    </div>
-                </article>
-
-                <article class="card" data-reveal data-tilt>
-                    <div class="card-body">
-                        <p class="card-kicker">NLP · Classification</p>
-                        <h3>Depression Detection from Reddit Texts</h3>
-                        <p class="card-text">
-                            NLP and machine-learning pipeline that detects signals of depression in Reddit posts through
-                            feature engineering and an ensemble of classifiers.
-                        </p>
-                        <div class="card-foot">
-                            <span class="metric">87.8% accuracy</span>
-                            <ul class="tags">
-                                <li>scikit-learn</li>
-                                <li>Feature Eng.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card-media">
-                        <figure class="diagram">
-                            <img src="assets/images/depression-detection/workflow.png"
-                                alt="Depression detection workflow diagram" loading="lazy">
-                            <a class="expand" href="assets/images/depression-detection/workflow.png" target="_blank"
-                                rel="noreferrer">Full diagram<i class="arrow">↗</i></a>
-                        </figure>
-                    </div>
-                </article>
-
-                <article class="card" data-reveal data-tilt>
-                    <div class="card-body">
-                        <p class="card-kicker">Linear Algebra · CV</p>
-                        <h3>PCA-Based Facial Gesture Analysis</h3>
-                        <p class="card-text">
-                            Principal component analysis applied to facial landmarks to decompose gestures and transfer
-                            expressions between different people.
-                        </p>
-                        <div class="card-foot">
-                            <a class="metric link" href="https://github.com/HanaMsmi/Gesture_Transfer_With_Appearance"
-                                target="_blank" rel="noreferrer">View on GitHub<i class="arrow">↗</i></a>
-                            <ul class="tags">
-                                <li>PCA</li>
-                                <li>NumPy</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card-media stack">
-                        <img class="contain" src="assets/images/linear-algebra/plots.png"
-                            alt="PCA facial gesture analysis plots" loading="lazy">
-                        <div class="videos">
-                            <video controls preload="metadata" playsinline>
-                                <source src="assets/videos/points.mp4" type="video/mp4">
-                            </video>
-                            <video controls preload="metadata" playsinline>
-                                <source src="assets/videos/transferred.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="experience" class="section">
-            <div class="sec-head" data-reveal>
-                <span class="sec-index">03</span>
-                <h2>Experience</h2>
-                <span class="sec-rule"></span>
-            </div>
-
-            <ol class="timeline">
-                <li class="job" data-reveal>
-                    <div class="job-head">
-                        <h3>Data Scientist</h3>
-                        <p class="job-org">Data Co Lab <span>· Remote</span></p>
-                        <p class="job-date">Feb 2024 — Mar 2026</p>
-                    </div>
-                    <ul class="bullets">
-                        <li>Built a food recommender system with collaborative and content-based filtering, solving
-                            cold-start with popularity-based techniques.</li>
-                        <li>Developed an AI product-validation system using multiple LLMs to verify attributes from
-                            images at ~90% accuracy, sharply reducing manual workload.</li>
-                        <li>Designed a vision-language pipeline extracting product dimensions and generating annotated
-                            images at ~90% accuracy.</li>
-                        <li>Built and deployed APIs with FastAPI and integrated backend services in Django.</li>
-                        <li>Shipped an AI voice assistant for restaurant orders (STT → LLM → TTS), cutting operational
-                            cost 20% through caching strategies.</li>
-                        <li>Worked on LLM chatbots using prompt engineering, RAG, fine-tuning and memory handling.</li>
-                    </ul>
-                </li>
-
-                <li class="job" data-reveal>
-                    <div class="job-head">
-                        <h3>Data Science Intern</h3>
-                        <p class="job-org">Iran Telecommunication Research Center <span>· ITRC</span></p>
-                        <p class="job-date">Jul 2022 — Sep 2022</p>
-                    </div>
-                    <ul class="bullets">
-                        <li>Reproduced a research paper on coupon recommendation systems for e-commerce.</li>
-                        <li>Modelled a Kaggle dataset of 417K+ user sessions.</li>
-                        <li>Implemented XGBoost and CatBoost models using Keras.</li>
-                        <li>Applied k-fold cross-validation, early stopping and class weighting.</li>
-                        <li>Improved performance through systematic hyperparameter tuning.</li>
-                    </ul>
-                </li>
-            </ol>
-        </section>
-
-        <section id="skills" class="section">
-            <div class="sec-head" data-reveal>
-                <span class="sec-index">04</span>
-                <h2>Skills</h2>
-                <span class="sec-rule"></span>
-            </div>
-
-            <div class="skills">
-                <div class="skill-row" data-reveal>
-                    <h3>Machine Learning &amp; AI</h3>
-                    <ul class="tags">
-                        <li>Machine Learning</li>
-                        <li>Deep Learning</li>
-                        <li>NLP</li>
-                        <li>Recommender Systems</li>
-                        <li>Data Analysis</li>
-                    </ul>
-                </div>
-                <div class="skill-row" data-reveal>
-                    <h3>LLMs &amp; Generative AI</h3>
-                    <ul class="tags">
-                        <li>Prompt Engineering</li>
-                        <li>RAG</li>
-                        <li>Fine-tuning</li>
-                        <li>AI Agents</li>
-                        <li>VLMs</li>
-                        <li>STT / TTS</li>
-                    </ul>
-                </div>
-                <div class="skill-row" data-reveal>
-                    <h3>Frameworks</h3>
-                    <ul class="tags">
-                        <li>PyTorch</li>
-                        <li>Keras</li>
-                        <li>FastAPI</li>
-                        <li>Django</li>
-                    </ul>
-                </div>
-                <div class="skill-row" data-reveal>
-                    <h3>Programming &amp; Tools</h3>
-                    <ul class="tags">
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>Git</li>
-                        <li>Docker</li>
-                        <li>MS Office</li>
-                    </ul>
+            <div class="visual me">
+                <div class="portrait">
+                    <span class="ear e1"></span><span class="ear e2"></span>
+                    <img src="assets/images/profile/photo.jpeg" alt="Portrait of Hanieh Masoomi" loading="lazy" />
                 </div>
             </div>
-        </section>
-
-        <section id="contact" class="section contact">
-            <div class="contact-inner" data-reveal>
-                <p class="status"><i></i>Available for part-time work</p>
-                <br>
-                <a class="mail" href="mailto:hannahmasoomi@gmail.com">hannahmasoomi@gmail.com</a>
-                <div class="contact-links">
-                    <a href="https://www.linkedin.com/in/hanamsmi/" target="_blank" rel="noreferrer">LinkedIn<i
-                            class="arrow">↗</i></a>
-                    <a href="https://github.com/HanaMsmi" target="_blank" rel="noreferrer">GitHub<i
-                            class="arrow">↗</i></a>
-                </div>
-            </div>
-            <p class="copyright">© <span id="year">2026</span> Hanieh Masoomi</p>
         </section>
     </main>
+
+    <nav class="pager" aria-label="Pages">
+        <button class="arrow" id="prev" aria-label="Previous page">‹</button>
+        <ol class="dots" id="dots"></ol>
+        <button class="arrow" id="next" aria-label="Next page">›</button>
+    </nav>
+
+    <div class="lightbox" id="lightbox" hidden>
+        <img alt="" />
+        <button aria-label="Close">×</button>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
